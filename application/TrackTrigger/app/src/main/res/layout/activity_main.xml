@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:fontFamily="@font/orbitron_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="TRACK\nand\nTRIGGER"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/white"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_splash" />
+        <Button
+            android:onClick="opensignIn"
+            android:id="@+id/signInButton"
+            style="@style/ButtonStyle"
+            android:text="Sign In"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="4dp"
+                android:background="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="4dp"
+                android:background="@color/white"/>
+        </LinearLayout>
+        <Button
+            android:onClick="opensignUp"
+            android:id="@+id/signUpButton"
+            style="@style/ButtonStyle"
+            android:text="Sign Up"/>
+    </LinearLayout>
+</ScrollView>

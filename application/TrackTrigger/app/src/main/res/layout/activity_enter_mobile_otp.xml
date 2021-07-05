@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".enter_mobile_otp">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="272dp"
+            android:layout_gravity="center"
+            android:src="@drawable/enter_otp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP sent to your Mobile Number"
+            style="@style/CategoryStyle"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:id="@+id/displayMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/otpCode"
+            style="@style/EditorFieldStyle"
+            android:hint="Enter OTP"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/resendOtp"
+            style="@style/CategoryStyle"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Didn't Receive OTP? Resend OTP"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp">
+
+            <Button
+                android:id="@+id/verifyOTP"
+                android:layout_width="match_parent"
+                style="@style/ButtonStyle"
+                android:text="VERIFY"/>
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_height="40dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

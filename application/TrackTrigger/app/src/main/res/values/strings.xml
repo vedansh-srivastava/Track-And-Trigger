@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Track &amp; Trigger</string>
+    <string-array name="professions">
+        <item>Working-Professionals</item>
+        <item>Home-Makers</item>
+        <item>Job-Seekers</item>
+        <item>Bachelors</item>
+        <item>Others</item>
+    </string-array>
+</resources>

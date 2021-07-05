@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/light_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_blue"
+        tools:context=".AddToDoListField">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/add_todolist"/>
+
+        <EditText
+            android:id="@+id/titleToDoList"
+            style="@style/EditorFieldStyle"
+            android:hint="Title"
+            />
+        <TextView
+            style="@style/EditorFieldStyle"
+            android:id="@+id/timeDisplay"
+            android:text="Scheduled Time"/>
+        <Button
+            android:id="@+id/AddAlarm"
+            style="@style/ButtonStyle"
+            android:text="Select Date And Time"/>
+        <Button
+            android:id="@+id/saveOnclick"
+            style="@style/ButtonStyle"
+            android:text="Schedule"/>
+
+    </LinearLayout>
+</ScrollView>

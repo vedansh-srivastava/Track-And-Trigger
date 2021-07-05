@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tracktrigger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TrackTrigger">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AddToDoListField"/>
+        <activity android:name=".ToDoListActivity"/>
+
+        <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
+        <receiver android:name="com.allyants.notifyme.BootNotifyMe">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Update_quantity_desc_field" />
+        <activity android:name=".AddQuantityField" />
+        <activity android:name=".Quantity_desc_field" />
+        <activity android:name=".AddDashboardField" />
+        <activity android:name=".HomeMakerDashboard" />
+        <activity android:name=".KYC" />
+        <activity android:name=".enter_mobile_otp" />
+        <activity android:name=".VerifyPhoneNo" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

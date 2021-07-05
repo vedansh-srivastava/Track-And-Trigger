@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".VerifyPhoneNo">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OTP Verification"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="40sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="304dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/send_otp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="We'll send an OTP on this Number"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="60dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="+91 - "
+                android:paddingLeft="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mobileNO"
+                android:layout_width="0dp"
+                style="@style/EditorFieldStyle"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:hint="Enter Mobile Number..." />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/sendOTP"
+                style="@style/ButtonStyle"
+                android:text="GET OTP" />
+            <ProgressBar
+                android:id="@+id/progbar"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
